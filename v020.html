@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>판매왕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary-color: #2c3e50; --accent-color: #e74c3c; --bg-light: #f4f7f6; }
+        body { font-family: 'Nanum Gothic', sans-serif; line-height: 1.7; margin: 0; color: #333; background-color: #fff; }
+        
+        /* 헤더 영역 */
+        header { background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: white; padding: 80px 20px; text-align: center; }
+        header h1 { font-size: 3.5rem; margin: 0; font-weight: 800; letter-spacing: -1px; }
+        header p { font-size: 1.4rem; margin-top: 15px; opacity: 0.9; font-weight: 400; }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
+        
+        .intro-text { text-align: center; margin-bottom: 60px; }
+        .intro-text h2 { font-size: 2.2rem; color: var(--primary-color); margin-bottom: 20px; }
+        
+        /* 기능 그리드 */
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
+        .feature-item { background: #fff; border: 1px solid #eee; padding: 30px; border-radius: 15px; transition: transform 0.3s ease; box-shadow: 0 5px 15px rgba(0,0,0,0.03); }
+        .feature-item:hover { transform: translateY(-50px); border-color: var(--accent-color); }
+        .feature-item h3 { color: var(--accent-color); font-size: 1.3rem; margin-top: 0; margin-bottom: 12px; }
+        .feature-item p { margin: 0; font-size: 1rem; color: #555; }
+
+        /* 하단 강조 섹션 */
+        .summary-section { background: var(--bg-light); padding: 60px 20px; text-align: center; border-radius: 30px; margin: 60px 0; }
+        .summary-section h2 { color: var(--primary-color); }
+
+        /* 푸터 */
+        footer { background: #222; color: #eee; padding: 50px 20px; text-align: center; font-size: 0.95rem; }
+        footer a { color: #3498db; text-decoration: none; font-weight: bold; }
+        footer .contact { margin: 20px 0; font-size: 1.1rem; color: #fff; }
+        .sep { margin: 0 10px; color: #444; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>판매왕</h1>
+    <p>스마트한 경영의 시작, 판매관리 끝판왕</p>
+</header>
+
+<div class="container">
+    <div class="intro-text">
+        <h2>판매관리는 판매왕과 함께 하세요!</h2>
+        <p>전표 작성만으로 재고, 미수금, 세금계산서까지 자동으로 관리되는 놀라운 경험</p>
+    </div>
+
+    <div class="feature-grid">
+        <div class="feature-item">
+            <h3>📊 자동 재고/미수금 관리</h3>
+            <p>매출·매입 전표 작성만 하세요. 재고 현황과 미수금 관리가 실시간으로 자동 처리됩니다.</p>
+        </div>
+        <div class="feature-item">
+            <h3>🧾 전자세금계산서 & 출력</h3>
+            <p>국세청 신고용 전자세금계산서 발행은 물론, 모바일 프린터로 현장에서 즉시 영수증 출력이 가능합니다.</p>
+        </div>
+        <div class="feature-item">
+            <h3>📱 바코드 스캐너 & 이미지</h3>
+            <p>카메라를 바코드 스캐너로 활용해 상품을 빠르게 등록하세요. 상품 이미지를 등록하여 직관적으로 확인하며 작업할 수 있습니다.</p>
+        </div>
+        <div class="feature-item">
+            <h3>🔍 퀵 서치 (초성 검색)</h3>
+            <p>편리한 초성 검색을 지원하여 수많은 거래처와 상품 중 원하는 항목을 순식간에 찾아낼 수 있습니다.</p>
+        </div>
+        <div class="feature-item">
+            <h3>📧 완벽한 문서 공유</h3>
+            <p>거래명세서, 견적서, 발주서를 문자, 카톡, 이메일, 팩스로 즉시 전송하세요.</p>
+        </div>
+        <div class="feature-item">
+            <h3>📈 경영 분석 보고서</h3>
+            <p>입력된 자료를 바탕으로 분석된 다양한 보고서를 통해 우리 회사의 경영 상태를 한눈에 파악하세요.</p>
+        </div>
+        <div class="feature-item">
+            <h3>📦 수주 및 발주 관리</h3>
+            <p>주문부터 납품까지(미납 관리), 발주부터 입고까지(미입고 관리) 체계적인 프로세스를 지원합니다.</p>
+        </div>
+        <div class="feature-item">
+            <h3>📅 거래 달력</h3>
+            <p>월간 거래 내역을 달력 형태로 표시하여 전체 흐름을 직관적으로 확인할 수 있습니다.</p>
+        </div>
+    </div>
+
+    <div class="summary-section">
+        <h2>복잡한 장부 정리는 이제 그만!</h2>
+        <p>현장에서 사무실까지, 판매왕 하나면 충분합니다.</p>
+    </div>
+</div>
+
+<footer>
+    <div class="contact">✉️ blackdogsoftlab@gmail.com</div>
+    <p>© BLACKDOGSOFT LAB. All rights reserved.</p>
+    <p>
+        <a href="https://blackdogsoftlab.github.io/apps/privacy_policy_kor.html" target="_blank">개인정보 처리 방침</a>
+        <span class="sep">|</span>
+        <a href="mailto:blackdogsoftlab@gmail.com">문의하기</a>
+    </p>
+</footer>
+
+</body>
+</html>
