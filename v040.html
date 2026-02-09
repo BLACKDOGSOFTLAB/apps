@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간편장부</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0056b3; /* 메인 파란색 */
+            --secondary-color: #007bff; /* 밝은 파란색 */
+            --bg-light: #f0f7ff; /* 연한 파란색 배경 */
+            --text-dark: #212529;
+            --text-muted: #6c757d;
+            --white: #ffffff;
+        }
+
+        body { font-family: 'Nanum Gothic', sans-serif; line-height: 1.6; margin: 0; color: var(--text-dark); background-color: var(--white); }
+        
+        /* 헤더 섹션 */
+        header { background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); color: var(--white); padding: 80px 20px; text-align: center; }
+        header h1 { font-size: 3rem; margin: 0; font-weight: 800; }
+        header p { font-size: 1.25rem; margin-top: 15px; opacity: 0.9; }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+
+        /* 앱 소개 섹션 */
+        .intro { text-align: center; margin-bottom: 60px; }
+        .intro h2 { font-size: 2.2rem; color: var(--primary-color); margin-bottom: 20px; }
+        .intro p { font-size: 1.15rem; color: var(--text-muted); line-height: 1.8; }
+
+        /* 특징 카드 섹션 */
+        .highlight { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px; }
+        .card { background: var(--bg-light); padding: 30px; border-radius: 20px; text-align: center; border: 1px solid #e1e9f5; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .card h3 { color: var(--primary-color); margin-bottom: 15px; }
+
+        /* 주요 기능 리스트 섹션 */
+        .features-box { background: var(--white); border: 2px solid var(--bg-light); padding: 40px; border-radius: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .features-box h2 { text-align: center; color: var(--primary-color); margin-bottom: 40px; border-bottom: 2px solid var(--bg-light); padding-bottom: 10px; }
+        
+        .feature-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; }
+        .feature-item { background: #fff; padding: 12px 15px; border-left: 4px solid var(--secondary-color); font-weight: 700; font-size: 0.95rem; box-shadow: 2px 2px 5px rgba(0,0,0,0.02); }
+
+        /* 푸터 섹션 */
+        footer { background: #2c3e50; color: #ecf0f1; padding: 50px 20px; text-align: center; margin-top: 60px; }
+        footer a { color: #3498db; text-decoration: none; font-weight: bold; }
+        footer .contact-info { margin-bottom: 20px; font-size: 1rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>간편장부</h1>
+    <p>복잡한 세무 관리, 이제 스마트폰 하나로 끝내세요!</p>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <h2>편리한 간편장부 앱</h2>
+        <p>
+            현장에서 바로바로 장부를 작성하고,<br>
+            1년에 한 번 PDF 또는 엑셀 파일로 출력해서 보관하면 간편장부 작성 끝!<br>
+            개인사업자와 프리랜서를 위한 가장 직관적인 장부 솔루션입니다.
+        </p>
+    </section>
+
+    <div class="highlight">
+        <div class="card">
+            <h3>📑 현장 즉시 기록</h3>
+            <p>거래가 발생한 현장에서 즉시 수입과 비용을 입력하여 누락 없는 장부를 만듭니다.</p>
+        </div>
+        <div class="card">
+            <h3>📊 강력한 보고서</h3>
+            <p>월간, 연간 손익 보고서를 통해 우리 회사의 재무 상태를 한눈에 파악할 수 있습니다.</p>
+        </div>
+        <div class="card">
+            <h3>📅 달력 기반 관리</h3>
+            <p>달력을 통해 일별 수입/비용을 확인하고 즉시 수정할 수 있는 스마트한 UX를 제공합니다.</p>
+        </div>
+    </div>
+
+    <section class="features-box">
+        <h2>주요 기능</h2>
+        <div class="feature-list">
+            <div class="feature-item">거래처 관리</div>
+            <div class="feature-item">간편장부 작성 (수입/비용/자산)</div>
+            <div class="feature-item">문서 내보내기 (PDF/Excel)</div>
+            <div class="feature-item">총수입/비용/손익 실시간 조회</div>
+            <div class="feature-item">월간 수입 보고서</div>
+            <div class="feature-item">월간 비용 보고서</div>
+            <div class="feature-item">월간 자산 보고서</div>
+            <div class="feature-item">월간 이익 보고서</div>
+            <div class="feature-item">월간 종합 보고서</div>
+            <div class="feature-item">년간 종합 보고서</div>
+            <div class="feature-item">달력별 데이터 집계</div>
+            <div class="feature-item">달력 내 즉시 등록 및 수정</div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>© BLACKDOGSOFT LAB. All rights reserved.</p>
+    <div class="contact">✉️ blackdogsoftlab@gmail.com</div>
+    <p>
+        <a href="https://blackdogsoftlab.github.io/apps/privacy_policy_kor.html" target="_blank">개인정보 처리 방침</a>
+        <span class="sep">|</span>
+        <a href="mailto:blackdogsoftlab@gmail.com">문의하기</a>
+    </p>
+</footer>
+
+</body>
+</html>
