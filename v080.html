@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대리왕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-yellow: #b4a401; /* 진노랑 */
+            --dark-yellow: #ff9800;    /* 오렌지빛 노랑 */
+            --light-bg: #fbf6c3;       /* 아주 연한 노랑 배경 */
+            --text-dark: #333333;
+            --text-muted: #666666;
+            --white: #ffffff;
+        }
+
+        body { font-family: 'Nanum Gothic', sans-serif; line-height: 1.7; margin: 0; color: var(--text-dark); background-color: var(--white); }
+        
+        /* 헤더 섹션 */
+        header { background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--dark-yellow) 100%); color: var(--text-dark); padding: 80px 20px; text-align: center; }
+        header h1 { font-size: 3rem; margin: 0; font-weight: 800; letter-spacing: -1.5px; }
+        header p { font-size: 1.2rem; margin-top: 15px; font-weight: 700; opacity: 0.9; }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+
+        /* 소개 섹션 */
+        .intro { text-align: center; margin-bottom: 60px; }
+        .intro h2 { font-size: 2.2rem; color: var(--dark-yellow); margin-bottom: 20px; }
+        .intro p { font-size: 1.15rem; color: var(--text-muted); max-width: 800px; margin: 0 auto; }
+
+        /* 주요 특징 카드 */
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 50px 0; }
+        .feature-card { background: var(--white); padding: 35px; border-radius: 25px; border: 2px solid #f1f1f1; transition: 0.3s; text-align: center; }
+        .feature-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(255, 193, 7, 0.15); border-color: var(--primary-yellow); }
+        
+        /* ★ 앱 아이콘 스타일: 배경색 없이 라운드 처리 ★ */
+        .app-icon-img {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px auto;
+            border-radius: 28px; /* 아이콘 라운드 처리 */
+            display: block;
+            overflow: hidden;
+            object-fit: cover;
+            -webkit-mask-image: -webkit-radial-gradient(white, black); /* 브라우저 호환성 */
+            background-color: transparent; /* 배경색 제거 */
+        }
+
+        .feature-card h3 { color: var(--dark-yellow); margin-top: 0; font-size: 1.4rem; }
+        .feature-card p { font-size: 1rem; color: var(--text-muted); margin: 0; }
+
+        /* 보고서 섹션 */
+        .report-section { background-color: var(--light-bg); padding: 50px; border-radius: 30px; border: 1px dashed var(--primary-yellow); }
+        .report-section h2 { text-align: center; color: var(--dark-yellow); margin-bottom: 35px; }
+        .report-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .report-item { background: var(--white); padding: 15px; border-radius: 15px; font-weight: 700; color: var(--text-dark); text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 5px solid var(--primary-yellow); }
+
+        /* 푸터 */
+        footer { background: #333; color: #fff; padding: 60px 20px; text-align: center; margin-top: 80px; }
+        footer a { color: var(--primary-yellow); text-decoration: none; font-weight: bold; }
+        .contact { font-size: 1.1rem; margin-bottom: 25px; }
+        .policy-link { display: inline-block; padding: 10px 30px; border: 1px solid #555; border-radius: 50px; color: #ccc; text-decoration: none; font-size: 0.9rem; transition: 0.3s; }
+        .policy-link:hover { background: var(--primary-yellow); color: #333; border-color: var(--primary-yellow); }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>대리왕</h1>
+    <p>대리기사님을 위한 가장 똑똑한 운행일지 & 가계부</p>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <img src="daeriwang.png" alt="대리왕 아이콘" class="app-icon-img">
+        <h2>수입과 지출, 이제 자동으로 관리하세요</h2>
+        <p>복잡한 수수료 계산부터 시급 분석까지, <br>대리왕이 기사님의 소중한 수익을 1원 단위까지 꼼꼼하게 지켜드립니다.</p>
+    </section>
+
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h3>🧮 자동 계산 시스템</h3>
+            <p>요금만 입력하세요. 프로그램별 수수료와 보험료를 자동으로 계산하여 실제 수익을 바로 알려드립니다.</p>
+        </div>
+        <div class="feature-card">
+            <h3>⏱️ 시급 & 순이익 분석</h3>
+            <p>운행 기록을 기반으로 기사님의 실제 시급과 순이익을 계산하여 효율적인 운행 전략을 도와드립니다.</p>
+        </div>
+        <div class="feature-card">
+            <h3>📅 달력형 운행일지</h3>
+            <p>언제 어디서 얼마나 벌었는지 달력 화면에서 한눈에 확인하고 관리할 수 있습니다.</p>
+        </div>
+    </div>
+
+    <section class="report-section">
+        <h2>📊 제공되는 전문 보고서</h2>
+        <div class="report-list">
+            <div class="report-item">월간 수입 보고서</div>
+            <div class="report-item">월간 지출 보고서</div>
+            <div class="report-item">월간 이익 분석</div>
+            <div class="report-item">상세 운행일지</div>
+            <div class="report-item">월간 종합 리포트</div>
+            <div class="report-item">년간 종합 리포트</div>
+            <div class="report-item">프로그램별 집계</div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>© BLACKDOGSOFT LAB. All rights reserved.</p>
+    <div class="contact">✉️ blackdogsoftlab@gmail.com</div>
+    <p>
+        <a href="https://blackdogsoftlab.github.io/apps/privacy_policy_kor.html" target="_blank">개인정보 처리 방침</a>
+        <span class="sep">|</span>
+        <a href="mailto:blackdogsoftlab@gmail.com">문의하기</a>
+    </p>
+</footer>
+
+</body>
+</html>
