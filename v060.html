@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장부왕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-orange: #ff8c00; /* 다크 오렌지 */
+            --accent-orange: #ffa500;  /* 선명한 오렌지 */
+            --light-orange: #fff5e6;   /* 아주 연한 오렌지 배경 */
+            --text-dark: #333333;
+            --text-gray: #666666;
+            --white: #ffffff;
+        }
+
+        body { font-family: 'Nanum Gothic', sans-serif; line-height: 1.7; margin: 0; color: var(--text-dark); background-color: var(--white); }
+        
+        /* 헤더 섹션 */
+        header { background: linear-gradient(135deg, var(--primary-orange) 0%, var(--accent-orange) 100%); color: var(--white); padding: 80px 20px; text-align: center; }
+        header h1 { font-size: 3.5rem; margin: 0; font-weight: 800; letter-spacing: -1px; }
+        header p { font-size: 1.3rem; margin-top: 15px; opacity: 0.95; font-weight: 400; }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+
+        /* 인트로 섹션 */
+        .intro { text-align: center; margin-bottom: 60px; }
+        .intro h2 { font-size: 2.2rem; color: var(--primary-orange); margin-bottom: 20px; }
+        .intro p { font-size: 1.1rem; color: var(--text-gray); max-width: 800px; margin: 0 auto; }
+
+        /* 특징 카드 그리드 */
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 40px 0; }
+        .feature-card { background: var(--white); padding: 35px; border-radius: 20px; text-align: center; border: 2px solid var(--light-orange); transition: 0.3s ease; }
+        .feature-card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(255, 140, 0, 0.1); border-color: var(--accent-orange); }
+        .feature-card h3 { color: var(--primary-orange); margin-bottom: 15px; font-size: 1.4rem; }
+        .feature-card p { font-size: 1rem; color: var(--text-gray); margin: 0; }
+
+        /* 하단 요약 섹션 */
+        .summary-box { background: var(--light-orange); padding: 40px; border-radius: 25px; text-align: center; margin-top: 40px; }
+        .summary-box h3 { color: var(--primary-orange); margin-top: 0; }
+        .summary-box ul { list-style: none; padding: 0; display: inline-block; text-align: left; }
+        .summary-box li { margin-bottom: 10px; font-weight: 700; color: var(--text-dark); }
+        .summary-box li::before { content: '✔️'; margin-right: 10px; }
+
+        /* 푸터 */
+        footer { background: #444; color: #eee; padding: 50px 20px; text-align: center; margin-top: 60px; }
+        footer a { color: var(--accent-orange); text-decoration: none; font-weight: bold; }
+        footer .contact { margin-bottom: 20px; font-size: 1.1rem; }
+        .policy-btn { display: inline-block; margin-top: 20px; padding: 10px 25px; border: 1px solid #777; border-radius: 50px; color: #ccc; text-decoration: none; font-size: 0.9rem; }
+        .policy-btn:hover { background: #555; color: white; border-color: var(--accent-orange); }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>장부왕</h1>
+    <p>가장 쉬운 수입·지출·손익 관리</p>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <h2>수입과 지출이 한눈에 보이는 스마트한 관리</h2>
+        <p>월간 장부 형식과 직관적인 달력 UI를 통해 복잡한 돈 관리를 가장 쉽고 빠르게 처리하세요.</p>
+    </section>
+
+    <div class="features">
+        <div class="feature-card">
+            <h3>📅 달력형 대시보드</h3>
+            <p>달력을 통해 일별 수입과 지출 현황을 한눈에 파악하고 직관적으로 관리할 수 있습니다.</p>
+        </div>
+        <div class="feature-card">
+            <h3>📈 자동 집계 리포트</h3>
+            <p>월간, 년간 수입·지출·손익을 자동으로 분석하여 변동 추이를 그래프처럼 쉽게 볼 수 있습니다.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🔔 고정 자금 관리</h3>
+            <p>매월 정기적인 고정 수입과 지출을 등록하여 잊지 않고 꼼꼼하게 관리할 수 있습니다.</p>
+        </div>
+    </div>
+
+    <div class="summary-box">
+        <h3>장부왕은 이런 분들께 추천합니다!</h3>
+        <ul>
+            <li>매출, 매입, 손익 관리가 필요한 소상공인 사업자</li>
+            <li>꼼꼼하고 편리한 가계부를 찾는 개인 사용자</li>
+            <li>체계적인 수입·지출 관리가 필요한 모든 분들</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>© BLACKDOGSOFT LAB. All rights reserved.</p>
+    <div class="contact">✉️ blackdogsoftlab@gmail.com</div>
+    <p>
+        <a href="https://blackdogsoftlab.github.io/apps/privacy_policy_kor.html" target="_blank">개인정보 처리 방침</a>
+        <span class="sep">|</span>
+        <a href="mailto:blackdogsoftlab@gmail.com">문의하기</a>
+    </p>
+</footer>
+
+</body>
+</html>
