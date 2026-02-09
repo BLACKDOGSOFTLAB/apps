@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>니가할일</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-pink: #e91e63; /* 진분홍 메인 */
+            --dark-pink: #c2185b;    /* 딥 핑크 */
+            --light-pink: #fce4ec;   /* 아주 연한 분홍 배경 */
+            --text-dark: #2c3e50;
+            --white: #ffffff;
+        }
+
+        body { font-family: 'Nanum Gothic', sans-serif; line-height: 1.7; margin: 0; color: var(--text-dark); background-color: var(--white); }
+        
+        /* 헤더 섹션 */
+        header { background: linear-gradient(135deg, var(--primary-pink) 0%, var(--dark-pink) 100%); color: var(--white); padding: 90px 20px; text-align: center; }
+        header h1 { font-size: 3.5rem; margin: 0; font-weight: 800; letter-spacing: -2px; }
+        header p { font-size: 1.3rem; margin-top: 15px; opacity: 0.95; }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+
+        /* 소개 섹션 */
+        .intro { text-align: center; margin-bottom: 60px; }
+        .intro h2 { font-size: 2.2rem; color: var(--primary-pink); margin-bottom: 20px; }
+        .intro p { font-size: 1.15rem; color: #555; }
+
+        /* 주요 기능 카드 */
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 60px; }
+        .feature-card { background: var(--white); padding: 35px; border-radius: 25px; border: 2px solid var(--light-pink); transition: 0.3s; text-align: center; }
+        .feature-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(233, 30, 99, 0.1); border-color: var(--primary-pink); }
+        .feature-card h3 { color: var(--primary-pink); margin-top: 0; font-size: 1.4rem; }
+        .feature-card p { font-size: 1rem; color: #666; margin: 0; }
+
+        /* 기능 리스트 요약 */
+        .summary-list { background-color: var(--light-pink); padding: 45px; border-radius: 30px; }
+        .summary-list h2 { text-align: center; color: var(--dark-pink); margin-top: 0; margin-bottom: 30px; }
+        .list-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .list-item { background: var(--white); padding: 15px; border-radius: 12px; font-weight: 700; color: var(--primary-pink); text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+
+        /* 푸터 섹션 */
+        footer { background: #222; color: #fff; padding: 60px 20px; text-align: center; margin-top: 60px; }
+        footer a { color: var(--primary-pink); text-decoration: none; font-weight: bold; }
+        .contact { font-size: 1.1rem; margin-bottom: 25px; }
+        .policy-link { display: inline-block; padding: 10px 30px; border: 1px solid #555; border-radius: 50px; color: #aaa; text-decoration: none; font-size: 0.9rem; transition: 0.3s; }
+        .policy-link:hover { background: var(--primary-pink); color: white; border-color: var(--primary-pink); }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>니가할일</h1>
+    <p>잊지 않게, 꼼꼼하게. 당신을 위한 최고의 체크리스트</p>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <h2>빠르고 쉬운 체크리스트 메모장</h2>
+        <p>복잡한 설정은 빼고, 기록의 본질에 집중했습니다. <br>다양한 체크리스트를 만들고 스마트하게 관리하세요.</p>
+    </section>
+
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h3>📂 탭 기반 분리 기록</h3>
+            <p>메모를 주제별 탭으로 나누어 기록하세요. 캠핑, 쇼핑, 업무 등 목적에 맞게 정돈된 리스트를 제공합니다.</p>
+        </div>
+        <div class="feature-card">
+            <h3>📊 엑셀 대량 가져오기</h3>
+            <p>PC에서 작성한 엑셀 파일을 한 번에 업로드하세요. 수많은 리스트도 폰에서 직접 칠 필요 없이 간편하게 준비됩니다.</p>
+        </div>
+        <div class="feature-card">
+            <h3>📤 초스피드 공유</h3>
+            <p>완성된 리스트를 카톡, 문자, 이메일로 즉시 전송하세요. 팀원이나 가족과 일정을 공유하기 최적입니다.</p>
+        </div>
+    </div>
+
+    <section class="summary-list">
+        <h2>핵심 기능 한눈에 보기</h2>
+        <div class="list-grid">
+            <div class="list-item">분류용 탭 관리</div>
+            <div class="list-item">Excel 데이터 연동</div>
+            <div class="list-item">무제한 체크리스트 생성</div>
+            <div class="list-item">멀티 메모장 모드</div>
+            <div class="list-item">SNS/메신저 빠른 전송</div>
+            <div class="list-item">6단계 글자 크기 조절</div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>© BLACKDOGSOFT LAB. All rights reserved.</p>
+    <div class="contact">✉️ blackdogsoftlab@gmail.com</div>
+    <p>
+        <a href="https://blackdogsoftlab.github.io/apps/privacy_policy_kor.html" target="_blank">개인정보 처리 방침</a>
+        <span class="sep">|</span>
+        <a href="mailto:blackdogsoftlab@gmail.com">문의하기</a>
+    </p>
+</footer>
+
+</body>
+</html>
