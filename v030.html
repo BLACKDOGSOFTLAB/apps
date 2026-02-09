@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>재고왕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #6a0dad; /* 짙은 보라색 */
+            --accent-color: #9b59b6;  /* 중간 보라색 */
+            --light-purple: #f3e5f5;  /* 아주 연한 보라색 배경 */
+            --text-dark: #333;
+            --text-light: #555;
+            --bg-white: #ffffff;
+            --bg-light-gray: #f8f8f8;
+        }
+        body { font-family: 'Nanum Gothic', sans-serif; line-height: 1.7; margin: 0; color: var(--text-dark); background-color: var(--bg-white); }
+        
+        /* 헤더 영역 */
+        header { background: linear-gradient(135deg, var(--primary-color) 0%, #8e44ad 100%); color: white; padding: 80px 20px; text-align: center; }
+        header h1 { font-size: 3.5rem; margin: 0; font-weight: 800; letter-spacing: -1px; }
+        header p { font-size: 1.4rem; margin-top: 15px; opacity: 0.9; font-weight: 400; }
+
+        .container { max-width: 960px; margin: 0 auto; padding: 60px 20px; }
+        
+        /* 소개 섹션 */
+        .intro-section { text-align: center; margin-bottom: 60px; }
+        .intro-section h2 { font-size: 2.2rem; color: var(--primary-color); margin-bottom: 20px; }
+        .intro-section p { font-size: 1.1rem; color: var(--text-light); max-width: 700px; margin: 0 auto; }
+
+        /* 핵심 기능 */
+        .key-features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 50px; }
+        .key-feature-item { background: var(--bg-light-gray); padding: 30px; border-radius: 15px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .key-feature-item h3 { color: var(--accent-color); font-size: 1.5rem; margin-bottom: 15px; }
+        .key-feature-item p { color: var(--text-light); font-size: 1rem; }
+
+        /* 주요 기능 목록 */
+        .main-features-section { background: var(--light-purple); padding: 60px 20px; text-align: center; margin: 60px 0; border-radius: 20px; }
+        .main-features-section h2 { color: var(--primary-color); margin-bottom: 30px; }
+        .feature-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; max-width: 700px; margin: 0 auto; }
+        .feature-list-item { background: var(--bg-white); padding: 15px 10px; border-radius: 10px; font-weight: 700; color: var(--primary-color); box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+
+        /* 푸터 */
+        footer { background: #333; color: #eee; padding: 50px 20px; text-align: center; font-size: 0.95rem; }
+        footer a { color: #bb86fc; text-decoration: none; font-weight: bold; } /* 보라색 계열 링크 */
+        footer .contact { margin: 20px 0; font-size: 1.1rem; color: #fff; }
+        .sep { margin: 0 10px; color: #555; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>재고왕</h1>
+    <p>간편하고 정확한 재고관리, 지금 바로 경험하세요!</p>
+</header>
+
+<div class="container">
+    <div class="intro-section">
+        <h2>재고관리가 필요한 모든 곳에, 재고왕</h2>
+        <p>소규모 사업자, 창고 관리자, 사내 물품 관리자 등 <br> 재고관리가 필요한 다양한 분야에서 복잡함 없이 사용할 수 있도록 핵심 기능에 충실했습니다.</p>
+    </div>
+
+    <div class="key-features">
+        <div class="key-feature-item">
+            <h3>💨 바코드 스캔 입출고</h3>
+            <p>내장된 바코드 스캔 기능으로 빠르고 정확하게 품목을 식별하고 입출고 처리합니다.</p>
+        </div>
+        <div class="key-feature-item">
+            <h3>📸 품목 사진 확인</h3>
+            <p>품목별로 사진을 등록하여 입출고 시에도 제품의 이미지를 바로 확인할 수 있습니다.</p>
+        </div>
+        <div class="key-feature-item">
+            <h3>✨ 간편한 재고 관리</h3>
+            <p>복잡한 기능은 최소화하고, 재고 입출고, 조정, 현황 등 핵심 기능만 직관적으로 구현했습니다.</p>
+        </div>
+    </div>
+
+    <div class="main-features-section">
+        <h2>*** 재고왕 주요 기능 ***</h2>
+        <div class="feature-list">
+            <div class="feature-list-item">1) 품목 관리</div>
+            <div class="feature-list-item">2) 입출고처 관리</div>
+            <div class="feature-list-item">3) 입고지시</div>
+            <div class="feature-list-item">4) 출고지시</div>
+            <div class="feature-list-item">5) 재고입고</div>
+            <div class="feature-list-item">6) 재고출고</div>
+            <div class="feature-list-item">7) 재고조정</div>
+            <div class="feature-list-item">8) 재고현황</div>
+            <div class="feature-list-item">9) 입출고현황</div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© BLACKDOGSOFT LAB. All rights reserved.</p>
+    <div class="contact">✉️ blackdogsoftlab@gmail.com</div>
+    <p>
+        <a href="https://blackdogsoftlab.github.io/apps/privacy_policy_kor.html" target="_blank">개인정보 처리 방침</a>
+        <span class="sep">|</span>
+        <a href="mailto:blackdogsoftlab@gmail.com">문의하기</a>
+    </p>
+</footer>
+
+</body>
+</html>
