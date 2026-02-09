@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단메모</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-white: #ffffff;
+            --bg-light: #f8f9fa;
+            --text-main: #212529;
+            --text-muted: #6c757d;
+            --accent-blue: #007bff; /* 포인트 컬러로 아주 미세한 블루 사용 */
+            --border-color: #dee2e6;
+        }
+
+        body { font-family: 'Nanum Gothic', sans-serif; line-height: 1.6; margin: 0; color: var(--text-main); background-color: var(--bg-white); }
+        
+        /* 헤더 섹션 */
+        header { background-color: var(--bg-white); border-bottom: 1px solid var(--border-color); padding: 100px 20px; text-align: center; }
+        header h1 { font-size: 3rem; margin: 0; font-weight: 800; color: var(--text-main); letter-spacing: -1.5px; }
+        header p { font-size: 1.2rem; margin-top: 15px; color: var(--text-muted); font-weight: 400; }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 80px 20px; }
+
+        /* 특징 섹션 */
+        .intro { text-align: center; margin-bottom: 80px; }
+        .intro h2 { font-size: 2rem; margin-bottom: 20px; }
+        .intro p { font-size: 1.1rem; color: var(--text-muted); }
+
+        /* 그리드 레이아웃 */
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; }
+        .feature-item { background: var(--bg-white); padding: 30px; border: 1px solid var(--border-color); border-radius: 12px; transition: all 0.2s ease; }
+        .feature-item:hover { border-color: var(--text-main); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .feature-item h3 { font-size: 1.25rem; margin-top: 0; margin-bottom: 15px; color: var(--text-main); }
+        .feature-item p { font-size: 0.95rem; color: var(--text-muted); margin: 0; }
+
+        /* 상세 설명 섹션 */
+        .detail-box { background-color: var(--bg-light); padding: 40px; border-radius: 15px; margin-top: 60px; }
+        .detail-box h3 { margin-top: 0; color: var(--text-main); }
+        .detail-box ul { padding-left: 20px; color: var(--text-muted); }
+        .detail-box li { margin-bottom: 10px; }
+
+        /* 푸터 섹션 */
+        footer { background-color: var(--bg-white); border-top: 1px solid var(--border-color); padding: 60px 20px; text-align: center; }
+        footer .contact { font-size: 1rem; margin-bottom: 20px; color: var(--text-main); }
+        footer a { color: var(--accent-blue); text-decoration: none; }
+        footer .copyright { color: #adb5bd; font-size: 0.85rem; margin-top: 30px; }
+        
+        .policy-link { display: inline-block; margin-top: 20px; color: var(--text-muted); text-decoration: underline; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>간단메모</h1>
+    <p>메모, 체크리스트, To-Do를 하나로 합친 가장 가벼운 도구</p>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <h2>복잡한 기능 대신 편리함을 담았습니다</h2>
+        <p>빠른 기록이 필요한 순간, 간단메모가 당신의 생각을 놓치지 않게 도와드립니다.</p>
+    </section>
+
+    <div class="feature-grid">
+        <div class="feature-item">
+            <h3>📑 탭 분리 관리</h3>
+            <p>메모를 주제별 탭으로 나누어 기록할 수 있어 찾기 쉽고 정돈된 메모 생활이 가능합니다.</p>
+        </div>
+        <div class="feature-item">
+            <h3>📊 엑셀 가져오기</h3>
+            <p>많은 양의 데이터도 PC에서 엑셀로 만들어 한 번에 가져오세요. 입력의 번거로움이 사라집니다.</p>
+        </div>
+        <div class="feature-item">
+            <h3>📂 멀티 메모장</h3>
+            <p>캠핑 준비물, 주소록, 쇼핑 리스트 등 용도에 따라 독립된 메모장을 여러 개 만들어 관리하세요.</p>
+        </div>
+        <div class="feature-item">
+            <h3>📤 빠른 공유</h3>
+            <p>작성한 내용을 카톡, 문자, 이메일로 즉시 전송할 수 있습니다.</p>
+        </div>
+        <div class="feature-item">
+            <h3>🔍 6단계 글자 크기</h3>
+            <p>내 눈에 가장 편안한 크기로! 6단계의 글자 크기 조절 옵션을 제공합니다.</p>
+        </div>
+    </div>
+
+    <section class="detail-box">
+        <h3>💡 간단메모는 이럴 때 유용합니다</h3>
+        <ul>
+            <li>마트 가기 전, <strong>쇼핑 리스트</strong>를 체크리스트로 만들 때</li>
+            <li>복잡한 <strong>캠핑 용품</strong>을 빠짐없이 챙기고 싶을 때</li>
+            <li>PC에 있는 <strong>주소록 데이터</strong>를 폰으로 옮기고 싶을 때</li>
+            <li>갑자기 떠오른 <strong>아이디어</strong>를 빠르게 메모하고 싶을 때</li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    <p>© BLACKDOGSOFT LAB. All rights reserved.</p>
+    <div class="contact">✉️ blackdogsoftlab@gmail.com</div>
+    <p>
+        <a href="https://blackdogsoftlab.github.io/apps/privacy_policy_kor.html" target="_blank">개인정보 처리 방침</a>
+        <span class="sep">|</span>
+        <a href="mailto:blackdogsoftlab@gmail.com">문의하기</a>
+    </p>
+</footer>
+
+</body>
+</html>
