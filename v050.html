@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퀵빌</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-black: #121212;
+            --secondary-black: #1e1e1e;
+            --accent-gold: #d4af37; /* 포인트 컬러: 골드 */
+            --text-white: #ffffff;
+            --text-gray: #a0a0a0;
+            --border-color: #333333;
+        }
+
+        body { font-family: 'Nanum Gothic', sans-serif; line-height: 1.7; margin: 0; color: var(--text-white); background-color: var(--primary-black); }
+        
+        /* 헤더 섹션 */
+        header { background: linear-gradient(180deg, #000000 0%, var(--primary-black) 100%); padding: 100px 20px; text-align: center; border-bottom: 1px solid var(--border-color); }
+        header h1 { font-size: 3.5rem; margin: 0; font-weight: 800; letter-spacing: -2px; color: var(--accent-gold); }
+        header p { font-size: 1.3rem; margin-top: 20px; color: var(--text-white); font-weight: 300; }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 80px 20px; }
+
+        /* 특징 섹션 */
+        .intro-box { text-align: center; margin-bottom: 80px; }
+        .intro-box h2 { font-size: 2.2rem; margin-bottom: 25px; color: var(--text-white); }
+        .intro-box p { font-size: 1.1rem; color: var(--text-gray); line-height: 1.9; }
+
+        /* 카드 그리드 */
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 80px; }
+        .feature-card { background: var(--secondary-black); padding: 40px; border-radius: 20px; border: 1px solid var(--border-color); transition: all 0.3s ease; }
+        .feature-card:hover { border-color: var(--accent-gold); transform: translateY(-10px); }
+        .feature-card h3 { color: var(--accent-gold); margin-bottom: 20px; font-size: 1.4rem; }
+        .feature-card p { color: var(--text-gray); font-size: 1rem; margin: 0; }
+
+        /* 참고사항 섹션 */
+        .notice-section { background: #1a1a1a; padding: 40px; border-radius: 15px; border-left: 5px solid var(--accent-gold); margin-bottom: 80px; }
+        .notice-section h4 { color: var(--accent-gold); margin-top: 0; font-size: 1.2rem; }
+        .notice-section ul { margin: 0; padding-left: 20px; color: var(--text-gray); }
+        .notice-section li { margin-bottom: 10px; }
+
+        /* 푸터 섹션 */
+        footer { background: #000000; padding: 60px 20px; text-align: center; border-top: 1px solid var(--border-color); }
+        footer .contact { font-size: 1.1rem; margin-bottom: 25px; }
+        footer a { color: var(--accent-gold); text-decoration: none; font-weight: bold; }
+        footer .copyright { color: #555; font-size: 0.9rem; margin-top: 20px; }
+        .policy-link { display: inline-block; margin-top: 20px; color: var(--text-gray); text-decoration: none; font-size: 0.9rem; border: 1px solid #444; padding: 8px 20px; border-radius: 50px; }
+        .policy-link:hover { background: #333; color: white; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>퀵빌</h1>
+    <p>가장 빠른 전자세금계산서 발행 솔루션</p>
+</header>
+
+<div class="container">
+    <section class="intro-box">
+        <h2>전자세금계산서 발행의 혁신</h2>
+        <p>
+            퀵빌은 거래명세서 작성부터 세금계산서 발행까지<br>
+            가장 직관적이고 빠른 업무 흐름을 제공합니다.
+        </p>
+    </section>
+
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h3>⚡️ 자동 발행 시스템</h3>
+            <p>작성된 거래명세서를 기반으로 전자세금계산서를 자동으로 생성합니다. 번거로운 중복 입력을 제거하세요.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🔍 스마트 분류 발행</h3>
+            <p>과세, 면세, 영세분을 자동으로 분류하여 각각의 규격에 맞는 계산서로 스마트하게 발행합니다.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🔓 자동 승인 프로세스</h3>
+            <p>공동인증서 1회 등록으로 비밀번호 입력 없이 즉시 승인! 발행 속도가 획기적으로 빨라집니다.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🏢 다수 사업장 관리</h3>
+            <p>여러 개의 사업장을 운영하시나요? 퀵빌 하나로 모든 사업장의 계산서를 통합 관리하고 발행할 수 있습니다.</p>
+        </div>
+    </div>
+
+    <section class="notice-section">
+        <h4>💡 이용 안내 및 참고사항</h4>
+        <ul>
+            <li>퀵빌은 전자세금계산서 시스템사업자 <strong>'팝빌'</strong>과 연동되어 안전하게 발행됩니다.</li>
+            <li>서비스 이용을 위해 '팝빌' 회원가입이 필요하며, 앱 내에서 간편하게 진행할 수 있습니다.</li>
+            <li>발행 시에는 팝빌 포인트가 차감되는 방식으로 운영됩니다.</li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    <p>© BLACKDOGSOFT LAB. All rights reserved.</p>
+    <div class="contact">✉️ blackdogsoftlab@gmail.com</div>
+    <p>
+        <a href="https://blackdogsoftlab.github.io/apps/privacy_policy_kor.html" target="_blank">개인정보 처리 방침</a>
+        <span class="sep">|</span>
+        <a href="mailto:blackdogsoftlab@gmail.com">문의하기</a>
+    </p>
+</footer>
+
+</body>
+</html>
